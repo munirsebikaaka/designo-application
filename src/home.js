@@ -1,6 +1,7 @@
 import AppNav from "./appNavigation";
 import Footer from "./Footer";
 import LocationDetails from "./locationDet";
+import ResHome from "./resHome";
 import Samples from "./samples";
 
 function Home() {
@@ -28,39 +29,46 @@ function Home() {
           />
         </div>
       </section>
+      <ResHome />
 
       <Samples />
 
-      <section className="section2">
-        <img src="imgs/home/speaker.png" alt="speaker" />
-        <div>
-          <h1>
-            ZX9 <br />
-            <span> SPEAKER</span>
-          </h1>
+      <section className="container">
+        <div className="section2">
+          <img src="imgs/home/speaker.png" alt="speaker" />
+          <div>
+            <h1>
+              ZX9 <br />
+              <span> SPEAKER</span>
+            </h1>
 
-          <p>
-            Upgrade to premium speakers that are phenomenally built to deliver
-            truly remarkable sound.
-          </p>
-          <button>SEE PRODUCTS</button>
+            <p>
+              Upgrade to premium speakers that are phenomenally built to deliver
+              truly remarkable sound.
+            </p>
+            <button>SEE PRODUCTS</button>
+          </div>
         </div>
       </section>
 
-      <section className="section3" style={styles}>
-        <div>
-          <h1>ZX7 SPEAKER</h1>
-          <button className="see-pros">SEE PRODUCTS</button>
+      <section className="container">
+        <div className="section3" style={styles}>
+          <div>
+            <h1>ZX7 SPEAKER</h1>
+            <button className="see-pros">SEE PRODUCTS</button>
+          </div>
         </div>
       </section>
 
-      <section className="section4">
-        <div>
-          <img src="Imgs/home/Bitmap (1).jpg" alt="ear peaces" />
-        </div>
-        <div className="details">
-          <h1>YX1 EARPHONES</h1>
-          <button className="see-pros">SEE PRODUCTS</button>
+      <section className="container">
+        <div className="section4">
+          <div>
+            <img src="Imgs/home/Bitmap (1).jpg" alt="ear peaces" />
+          </div>
+          <div className="details">
+            <h1>YX1 EARPHONES</h1>
+            <button className="see-pros">SEE PRODUCTS</button>
+          </div>
         </div>
       </section>
       <LocationDetails />

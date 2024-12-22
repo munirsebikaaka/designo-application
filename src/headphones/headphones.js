@@ -5,3 +5,4 @@ const Headphones = () => {
     </div>
   );
 };
+export default Headphones;

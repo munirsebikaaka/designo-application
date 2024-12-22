@@ -1,4 +1,5 @@
 import { IoCartOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 
 const AppNav = () => {
   return (
@@ -9,24 +10,24 @@ const AppNav = () => {
         </div>
         <ul>
           <li>
-            <a href="#" className="nav-link">
+            <NavLink to={"/"} className="nav-link">
               HOME
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="nav-link">
+            <NavLink to={"/headphones"} className="nav-link">
               HEADPHONES
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="nav-link">
+            <NavLink to={"/speakers"} className="nav-link">
               SPEAKERS
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="nav-link">
+            <NavLink to={"/earphones"} className="nav-link">
               EARPHONES
-            </a>
+            </NavLink>
           </li>
         </ul>
         <IoCartOutline className="app-nav-icon" />

@@ -16,7 +16,14 @@ const Footer = () => {
               devoted to helping you get the most out of personal audio. Come
               and visit our demo facility - we’re open 7 days a week.
             </p>
-            <h3>Copyright {new Date().getFullYear()} All Rights Reserved</h3>
+            <div className="res-footer">
+              <h3>Copyright {new Date().getFullYear()} All Rights Reserved</h3>
+              <div className="footer-icon">
+                <FaInstagram className="icon" />
+                <RiFacebookBoxFill className="icon" />
+                <FaTwitter className="icon" />
+              </div>
+            </div>
           </div>
           <div className="footer-icons">
             <FaInstagram className="icon" />

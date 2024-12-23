@@ -15,7 +15,16 @@ const LocationDetails = () => {
             make Audiophile the best place to buy your portable audio equipment.
           </p>
         </div>
-        <img src="imgs/home/Bitmap (2).jpg" alt="face of our customer" />
+        <img
+          src="imgs/home/Bitmap (2).jpg"
+          alt="face of our customer"
+          className="main-img"
+        />
+        <img
+          src="imgs/home/Bitmap3.png"
+          alt="face of our customer"
+          className="res"
+        />
       </div>
     </div>
   );

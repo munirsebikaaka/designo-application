@@ -65,9 +65,11 @@ function Home() {
           <div>
             <img src="Imgs/home/Bitmap (1).jpg" alt="ear peaces" />
           </div>
-          <div className="details">
-            <h1>YX1 EARPHONES</h1>
-            <button className="see-pros">SEE PRODUCTS</button>
+          <div className="sec4-det">
+            <div className="details">
+              <h1>YX1 EARPHONES</h1>
+              <button className="see-pros">SEE PRODUCTS</button>
+            </div>
           </div>
         </div>
       </section>

@@ -133,6 +133,18 @@
   .res-home-main div {
     margin: 100px auto;
   }
+
+  .headphones section,
+  .speakers section,
+  .earphones section {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 120px;
+  }
 }
 
 @media (max-width: 600px) {

@@ -6,14 +6,14 @@ const Samples = () => {
       <div className="samples">
         <div>
           <img src="imgs/samples/sample1.png" alt="product example" />
-          <button>SPEAKERS</button>
+          <button>HEADPHONES</button>
           <p>
             SHOP <FaChevronRight className="sample-icon" />
           </p>
         </div>
         <div>
           <img src="imgs/samples/sample2.png" alt="product example" />
-          <button>HEADPHONES</button>
+          <button>SPEAKERS</button>
           <p>
             SHOP <FaChevronRight className="sample-icon" />
           </p>

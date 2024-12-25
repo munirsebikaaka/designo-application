@@ -1,7 +1,7 @@
-import AppNav from "../appNavigation";
-import Footer from "../Footer";
-import LocationDetails from "../locationDet";
-import Samples from "../samples";
+import AppNav from "../../navigations/appNavigation";
+import Footer from "../../generals/Footer";
+import LocationDetails from "../../generals/locationDet";
+import Samples from "../../generals/samples";
 
 const Earphones = () => {
   return (

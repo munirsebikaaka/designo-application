@@ -1,7 +1,7 @@
 import { RiFacebookBoxFill } from "react-icons/ri";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import FooterNav from "./FooterNav";
+import FooterNav from "../navigations/FooterNav";
 
 const Footer = () => {
   return (

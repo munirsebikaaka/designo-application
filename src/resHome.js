@@ -1,4 +1,4 @@
-import AppNav from "./appNavigation";
+import AppNav from "./navigations/appNavigation";
 const ResHome = () => {
   const styles = {
     backgroundImage: `url('imgs/home/Bitmap.png')`,

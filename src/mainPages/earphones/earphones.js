@@ -2,6 +2,7 @@ import AppNav from "../../navigations/appNavigation";
 import Footer from "../../generals/Footer";
 import LocationDetails from "../../generals/locationDet";
 import Samples from "../../generals/samples";
+import { NavLink } from "react-router-dom";
 
 const Earphones = () => {
   return (
@@ -31,7 +32,9 @@ const Earphones = () => {
             even in noisy environments with its active noise cancellation
             feature.
           </p>
-          <button className="earphones-products">SEE PRODUCTS</button>
+          <NavLink to={"/earphonesDetails"} className="head-products">
+            SEE PRODUCTS
+          </NavLink>
         </div>
       </section>
 

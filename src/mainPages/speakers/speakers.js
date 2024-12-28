@@ -2,6 +2,7 @@ import AppNav from "../../navigations/appNavigation";
 import Footer from "../../generals/Footer";
 import LocationDetails from "../../generals/locationDet";
 import Samples from "../../generals/samples";
+import { NavLink } from "react-router-dom";
 
 const Speakers = () => {
   return (
@@ -31,7 +32,9 @@ const Speakers = () => {
             -- creating new possibilities for more pleasing and practical audio
             setups.
           </p>
-          <button className="speaker-products">SEE PRODUCTS</button>
+          <NavLink to={"/speakersDetailsOne"} className="head-products">
+            SEE PRODUCTS
+          </NavLink>
         </div>
       </section>
 
@@ -47,7 +50,9 @@ const Speakers = () => {
             represents the top of the line powered speakers for home or studio
             use.
           </p>
-          <button className="speaker-products">SEE PRODUCTS</button>
+          <NavLink to={"/speakersDetailsTwo"} className="head-products">
+            SEE PRODUCTS
+          </NavLink>
         </div>
         <div className="img-container">
           <img

@@ -30,9 +30,7 @@ function Home() {
         </div>
       </section>
       <ResHome />
-
       <Samples />
-
       <section className="container">
         <div className="section2">
           <img src="imgs/home/speaker.png" alt="speaker" />

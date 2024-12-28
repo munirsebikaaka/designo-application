@@ -44,7 +44,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,9 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin: 110px auto; */
   gap: 20px;
-
   color: var(--mainColor);
 }
 .main {
@@ -223,7 +220,6 @@ body {
   color: var(--mainColor);
 }
 .section3 div {
-  /* max-width: 500px; */
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -376,11 +372,16 @@ body {
 .res-footer .icon {
   width: 24px;
   height: 24px;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 .res-footer .icon {
   margin: 0 5px;
 }
-
+.footer-icons .icon:hover,
+.res-footer .icon:hover {
+  color: var(--semiMainColor);
+}
 .res-footer {
   display: flex;
   justify-content: space-between;
@@ -390,22 +391,25 @@ body {
   display: none;
 }
 /* APPLICATION NAVIGATION */
-.app-nav {
+.app-nav,
+.details-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
   padding: 30px 0;
   margin: 0 auto;
-  border-bottom: 1px solid var(--mainColor);
+  border-bottom: 1px solid var(--semiBackground);
 }
-.app-nav ul {
+.app-nav ul,
+.details-nav ul {
   display: flex;
   align-items: center;
   gap: 30px;
   list-style: none;
 }
-.app-nav .nav-link {
+.app-nav .nav-link,
+.details-nav .nav-link {
   text-decoration: none;
   font-family: Manrope;
   font-size: 13px;
@@ -415,6 +419,7 @@ body {
   color: var(--mainColor);
   transition: all 0.5s;
 }
+.details-nav .nav-link:hover,
 .app-nav .nav-link:hover {
   color: var(--semiMainColor);
 }
@@ -506,7 +511,20 @@ body {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 100px;
-  margin-bottom: 120px;
+  margin-top: 120px;
+}
+
+.headphones .head,
+.speakers .head,
+.earphones .head {
+  background-color: var(--blackColor);
+  color: var(--mainColor);
+}
+.headphones .head h1,
+.speakers .head h1,
+.earphones .head h1 {
+  text-align: center;
+  padding: 60px 0;
 }
 
 .headphones section .about,
@@ -553,14 +571,14 @@ body {
   opacity: 50%;
   width: 445px;
 }
-.headphones section button,
-.earphones section button,
-.speakers section button {
-  width: 160px;
-  height: 48px;
+.headphones section .head-products,
+.earphones section .head-products,
+.speakers section .head-products {
+  padding: 15px 25px;
   border: none;
   cursor: pointer;
   display: inline-block;
+  text-decoration: none;
   background-color: var(--semiMainColor);
   color: var(--mainColor);
 }
@@ -568,4 +586,128 @@ body {
   background-color: var(--sampleBackground);
   padding: 50px 0;
   border-radius: 11px;
+}
+/* PRODUCTION DETAILS */
+.pro-details .sections1,
+.pro-details .sections2,
+.pro-details .sections4,
+.pro-details .sections5 {
+  border: 1px solid red;
+  max-width: 1100px;
+  margin: 50px auto;
+}
+.pro-details .sections1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 100px;
+}
+.pro-details .sections2,
+.pro-details .sections4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pro-details .sections1 h1 {
+  font-family: Manrope;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 1.4285714626312256px;
+}
+.pro-details .sections1 p {
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  width: 445px;
+  opacity: 50%;
+}
+.pro-details .sections1 .price {
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.59px;
+  letter-spacing: 1.2857142686843872px;
+}
+.pro-details .sections1 .detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pro-details .sections2 p {
+  width: 635px;
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 20px;
+
+  opacity: 50%;
+}
+.first-pal {
+  margin-bottom: 20px;
+  border: 1px solid red;
+}
+.pro-details .sections2 .bonus li {
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  opacity: 50%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.pro-details .sections2 span {
+  color: var(--semiMainColor);
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.pro-details .sections2 ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pro-details .sections2 h1 {
+  font-family: Manrope;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1.1428571939468384px;
+  margin-bottom: 30px;
+}
+
+.pro-details .sections5 .main {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+.pro-details .sections5 .main div {
+  width: 100%;
+}
+.pro-details .sections5 .main .sec-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pro-details .sections5 .main .sec-details img {
+  height: 200px;
+}
+.pro-details .sections5 .head {
+  text-align: center;
+}
+.details-navigation {
+  background-color: var(--blackColor);
+}
+.details-navigation .icon {
+  color: var(--mainColor);
 }

@@ -1,4 +1,4 @@
-// import { Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Footer from "../../generals/Footer";
 import LocationDetails from "../../generals/locationDet";
 import Samples from "../../generals/samples";
@@ -8,7 +8,11 @@ const HeadphonesDetailsOnes = () => {
   return (
     <div className="pro-details">
       <DetailsNav />
-      <button>Go Back</button>
+      <div className="goback">
+        <NavLink className={"link"} to={"/headphones"}>
+          Go Back
+        </NavLink>
+      </div>
       <section className="container">
         <div className="sections1">
           <div className="img-container">
@@ -26,12 +30,13 @@ const HeadphonesDetailsOnes = () => {
               balanced depth and precision of studio-quality sound.
             </p>
             <h3 className="price">$ 2,999</h3>
-            <span>
+            <div className="inc-cell">
               <button className="increase">
-                <span>-</span> 1 <span>+</span>
+                <span className="smy">-</span> <span className="num">1</span>{" "}
+                <span className="smy">+</span>
               </button>
               <button className="increase2">ADD TO CART</button>
-            </span>
+            </div>
           </div>
         </div>
       </section>
@@ -39,7 +44,7 @@ const HeadphonesDetailsOnes = () => {
         <div className="sections2">
           <div>
             <h1>FEATURES</h1>
-            <p>
+            <p className="feat-det">
               Featuring a genuine leather head strap and premium earcups, these
               headphones deliver superior comfort for those who like to enjoy
               endless listening. It includes intuitive controls designed for any

@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Footer from "../../generals/Footer";
 import LocationDetails from "../../generals/locationDet";
 import Samples from "../../generals/samples";
@@ -7,8 +8,11 @@ const HeadphonesDetailsThree = () => {
   return (
     <div className="pro-details">
       <DetailsNav />
-      <button>Go Back</button>
-
+      <div className="goback">
+        <NavLink className={"link"} to={"/headphones"}>
+          Go Back
+        </NavLink>
+      </div>
       <section className="container">
         <div className="sections1">
           <div className="img-container">
@@ -30,12 +34,13 @@ const HeadphonesDetailsThree = () => {
               wireless headset is a brilliant companion at home or on the move.
             </p>
             <h3 className="price">$$ 899</h3>
-            <span>
+            <div className="inc-cell">
               <button className="increase">
-                <span>-</span> 1 <span>+</span>
+                <span className="smy">-</span>
+                <span className="num">1</span> <span className="smy">+</span>
               </button>
               <button className="increase2">ADD TO CART</button>
-            </span>
+            </div>
           </div>
         </div>
       </section>
@@ -43,7 +48,7 @@ const HeadphonesDetailsThree = () => {
         <div className="sections2">
           <div>
             <h1>FEATURES</h1>
-            <p>
+            <p className="feat-det">
               These headphones have been created from durable, high-quality
               materials tough enough to take anywhere. Its compact folding
               design fuses comfort and minimalist style making it perfect for

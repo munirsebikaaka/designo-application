@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Footer from "../../generals/Footer";
 import LocationDetails from "../../generals/locationDet";
 import Samples from "../../generals/samples";
@@ -7,8 +8,11 @@ const SpeakerDetails2 = () => {
   return (
     <div className="pro-details">
       <DetailsNav />
-      <button>Go Back</button>
-
+      <div className="goback">
+        <NavLink className={"link"} to={"/speakers"}>
+          Go Back
+        </NavLink>
+      </div>
       <section className="container">
         <div className="sections1">
           <div className="img-container">
@@ -26,12 +30,13 @@ const SpeakerDetails2 = () => {
               the top of the line powered speakers for home or studio use.
             </p>
             <h3 className="price">$3,500</h3>
-            <span>
+            <div className="inc-cell">
               <button className="increase">
-                <span>-</span> 1 <span>+</span>
+                <span className="smy">-</span>
+                <span className="num">1</span> <span className="smy">+</span>
               </button>
               <button className="increase2">ADD TO CART</button>
-            </span>
+            </div>
           </div>
         </div>
       </section>
@@ -39,7 +44,7 @@ const SpeakerDetails2 = () => {
         <div className="sections2">
           <div>
             <h1>FEATURES</h1>
-            <p>
+            <p className="feat-det">
               Reap the advantages of a flat diaphragm tweeter cone. This
               provides a fast response rate and excellent high frequencies that
               lower tiered bookshelf speakers cannot provide. The woofers are

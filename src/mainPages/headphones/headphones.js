@@ -12,7 +12,7 @@ const Headphones = () => {
         <h1>HEADPHONES</h1>
       </div>
 
-      <section>
+      <section className="unreverse">
         <div className="img-container">
           <img
             className="img"
@@ -38,7 +38,7 @@ const Headphones = () => {
         </div>
       </section>
 
-      <section className="sec-section">
+      <section className="reverse">
         <div className="about">
           <h1>
             XX99 MARK I<br /> <span> HEADPHONES</span>
@@ -61,7 +61,7 @@ const Headphones = () => {
         </div>
       </section>
 
-      <section>
+      <section className="unreverse">
         <div className="img-container">
           <img
             className="img"

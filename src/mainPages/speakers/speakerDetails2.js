@@ -23,7 +23,10 @@ const SpeakerDetails2 = () => {
             />
           </div>
           <div className="detail-container">
-            <h1>ZX7 SPEAKER</h1>
+            <h1>
+              ZX7
+              <br /> SPEAKER
+            </h1>
             <p>
               Stream high quality sound wirelessly with minimal to no loss. The
               ZX7 speaker uses high-end audiophile components that represents

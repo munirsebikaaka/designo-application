@@ -24,7 +24,8 @@ const SpeakerDetails1 = () => {
           </div>
           <div className="detail-container">
             <h1>
-              ZX9<span> SPEAKER</span>
+              ZX9 <br />
+              <span> SPEAKER</span>
             </h1>
             <p>
               Upgrade your sound system with the all new ZX9 active speaker.
@@ -69,19 +70,19 @@ const SpeakerDetails1 = () => {
             <h1>IN THE BOX</h1>
             <ul>
               <li>
-                <span>1x</span>Speaker Unit
+                <span>1x</span> <p> Speaker Unit</p>
               </li>
               <li>
-                <span>2x</span>Speaker Cloth Panel
+                <span>2x</span> <p> Speaker Cloth Panel</p>
               </li>
               <li>
-                <span>1x</span>User Manual
+                <span>1x</span> <p> User Manual</p>
               </li>
               <li>
-                <span>1x</span>33.5mm 10mAudioCable
+                <span>1x</span> <p> 33.5mm 10mAudioCable</p>
               </li>
               <li>
-                <span>1x</span>10m Optical Cable
+                <span>1x</span> <p> 10m Optical Cable</p>
               </li>
             </ul>
           </div>

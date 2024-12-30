@@ -32,7 +32,7 @@ const HeadphonesDetailsOnes = () => {
             <h3 className="price">$ 2,999</h3>
             <div className="inc-cell">
               <button className="increase">
-                <span className="smy">-</span> <span className="num">1</span>{" "}
+                <span className="smy">-</span> <span className="num">1</span>
                 <span className="smy">+</span>
               </button>
               <button className="increase2">ADD TO CART</button>
@@ -64,22 +64,23 @@ const HeadphonesDetailsOnes = () => {
           </div>
           <div className="bonus">
             <h1>IN THE BOX</h1>
-
             <ul>
               <li>
-                <span>1x</span>Headphones Unit
+                <span>1x</span>
+                <p>Headphones Unit</p>
               </li>
               <li>
-                <span>2x</span>Replacement Earcups
+                <span>2x</span>
+                <p>Replacement Earcups</p>
               </li>
               <li>
-                <span>1x</span>User Manual
+                <span>1x</span> <p> User Manual</p>
               </li>
               <li>
-                <span>1x</span>33.5mm 5mAudioCable
+                <span>1x</span> <p> 33.5mm 5mAudioCable</p>
               </li>
               <li>
-                <span>1x</span>Travel Bag
+                <span>1x</span> <p> Travel Bag</p>
               </li>
             </ul>
           </div>

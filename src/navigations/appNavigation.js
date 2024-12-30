@@ -15,6 +15,8 @@ const AppNav = () => {
   return (
     <div className="app-nav-cell">
       <nav className="app-nav">
+        <IoMdMenu onClick={add} className="mobile-menu" />
+
         <div className="menu">
           <IoMdMenu onClick={add} className="open" />
           <img src="imgs/home/audiophile.png" alt="Logo" />

@@ -23,7 +23,8 @@ body {
 .container {
   padding: 0 30px;
 }
-.res {
+.res,
+.mobile-menu {
   display: none;
 }
 .section1,
@@ -53,8 +54,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   color: var(--mainColor);
+  margin-top: 50px;
 }
 .main {
   max-width: 1100px;
@@ -92,7 +94,7 @@ body {
 
 .res-home-main h1 {
   font-family: Manrope;
-  font-size: 56px;
+  font-size: 46px;
   font-weight: 700;
   line-height: 58px;
   letter-spacing: 2px;
@@ -113,7 +115,8 @@ body {
   line-height: 25px;
   text-align: center;
 }
-.section1 .main button {
+.section1 .main button,
+.res-home-main button {
   cursor: pointer;
   border: none;
   font-family: Manrope;
@@ -127,6 +130,7 @@ body {
   background-color: var(--semiMainColor);
   transition: all 0.5s;
 }
+.res-home-main button:hover,
 .section1 .main button:hover {
   background-color: var(--hoverBtn);
 }
@@ -397,7 +401,7 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
-  padding: 30px 0;
+  padding: 30px;
   margin: 0 auto;
   border-bottom: 0.5px solid #898989;
 }
@@ -444,7 +448,7 @@ body {
 
 .close {
   margin-left: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .menu {
@@ -506,7 +510,7 @@ body {
   margin-top: -80px;
 }
 /* Main pages */
-.headphones section,
+.headphones .unreverse,
 .speakers section,
 .earphones section {
   max-width: 1100px;
@@ -516,6 +520,16 @@ body {
   align-items: center;
   gap: 100px;
   margin-top: 120px;
+}
+
+.headphones .reverse {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  margin-top: 120px;
+  /* padding: 0 30px; */
 }
 
 .headphones .head,
@@ -634,7 +648,7 @@ body {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
-  width: 445px;
+  width: 100%;
   opacity: 50%;
 }
 .pro-details .sections1 .price {
@@ -659,6 +673,8 @@ body {
   /* margin-bottom: 20px; */
   opacity: 50%;
 }
+/* .sections2 div {
+} */
 .pro-details .sections2 .feat-det {
   margin-bottom: 20px;
 }
@@ -705,7 +721,6 @@ body {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
-  opacity: 50%;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -716,6 +731,9 @@ body {
   font-size: 15px;
   font-weight: 700;
   line-height: 25px;
+}
+.pro-details .sections2 .bonus .li p {
+  opacity: 50%;
 }
 .pro-details .sections2 ul {
   list-style: none;
@@ -816,6 +834,7 @@ body {
 .goback {
   max-width: 1100px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 .goback .link {
   display: inline-block;

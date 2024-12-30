@@ -1,6 +1,6 @@
 @media (max-width: 800px) {
   .container {
-    padding: 0 10px;
+    padding: 0 30px;
   }
   .main-img {
     display: none;
@@ -17,10 +17,10 @@
 
   .section2 {
     margin: 25px auto;
-    padding-top: 100px;
+    padding: 60px 0;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 80px;
   }
 
   .section2 div {
@@ -36,6 +36,10 @@
   }
   .section2 p {
     text-align: center;
+  }
+
+  .section2 img {
+    width: 200px;
   }
   .location-cell {
     display: flex;
@@ -86,51 +90,44 @@
     width: 100%;
   }
 
-  .section4 .details {
-    padding-left: 40px;
-  }
   .section4 h1 {
     font-size: 25px;
   }
   body {
     position: relative;
   }
-  .app-nav .show-links {
+
+  .app-nav .show-links,
+  .details-nav .show-links {
     align-items: start;
     flex-direction: column;
     gap: 15px;
     position: absolute;
-    top: 2.5%;
-    left: 1%;
+    top: 1.8%;
+    left: 0%;
     transition: all 0.5s;
+    padding: 5px 10px;
+    background-color: #2d2d2dd5;
   }
 
-  .app-nav .hide-links {
+  .app-nav .hide-links,
+  .details-nav .hide-links {
     align-items: start;
     flex-direction: column;
     gap: 15px;
     position: absolute;
-    top: 2.5%;
+    top: 1.8%;
     left: -30%;
     transition: all 0.5s;
+    background-color: #2d2d2dd5;
   }
 
   .open,
   .close {
     display: block;
   }
-  .section3 {
-    max-width: 1100px;
-    margin: 25px auto;
-    height: 300px;
-    border-radius: 5px;
-  }
-  .sec-section {
-    display: none;
-    border: 1px solid red;
-  }
 
-  .headphones section,
+  .headphones .unreverse,
   .speakers section,
   .earphones section {
     display: flex;
@@ -139,6 +136,15 @@
     gap: 100px;
     margin: 120px 10px;
   }
+
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 100px;
+    margin: 120px 0;
+    padding: 0 10px;
+  }
+
   .headphones section .about,
   .speakers section .about,
   .earphones section .about {
@@ -154,12 +160,38 @@
   .headphones section h1,
   .speakers section h1,
   .earphones section h1 {
-    font-family: Manrope;
     font-size: 40px;
     font-weight: 700;
     line-height: 44px;
     letter-spacing: 1.4285714626312256px;
     text-align: center;
+  }
+
+  .pro-details .sections1 {
+    /* display: grid; */
+    grid-template-columns: 1fr 2fr;
+    /* align-items: center; */
+    gap: 70px;
+  }
+  .pro-details .sections1 img {
+    width: 200px;
+  }
+
+  .pro-details .sections2 {
+    flex-direction: column;
+    gap: 120px;
+  }
+  .pro-details .sections2 p {
+    width: 100%;
+  }
+  .bonus {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    justify-content: space-between;
+  }
+
+  .mobile-menu {
+    display: none;
   }
 }
 @media (max-width: 700px) {
@@ -172,6 +204,15 @@
 }
 
 @media (max-width: 600px) {
+  .mobile-menu {
+    display: block;
+    color: white;
+    width: 30px;
+    height: 30px;
+  }
+  .open {
+    display: none;
+  }
   .res-home-main {
     height: 440px;
   }
@@ -189,11 +230,93 @@
     flex-direction: column;
     gap: 20px;
   }
-  /* .sec4-det {
-    border: 1px solid green;
+  .footer-navigation {
     display: flex;
+    flex-direction: column;
     align-items: center;
-  } */
+    padding-top: 50px;
+  }
+  .footer-navigation ul {
+    padding-top: 30px;
+    flex-direction: column;
+  }
+
+  .footer-body .inner {
+    width: 100%;
+  }
+
+  .footer-cell {
+    padding: 0 10px;
+  }
+
+  .footer-body .inner p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .res-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .section3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .section3 div {
+    margin-left: 30px;
+  }
+  .section4 .details {
+    padding-left: 40px;
+    gap: 30px;
+    height: 250.5px;
+  }
+  .section4 img {
+    height: 250.5px;
+  }
+  .samples {
+    max-width: 1100px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  .pro-details .sections1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pro-details .sections5 .main {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .pro-details .sections5 .main .sec-details {
+    gap: 20px;
+  }
+
+  .bonus {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-nav .show-links,
+  .details-nav .show-links {
+    gap: 15px;
+    top: 1.6%;
+    left: 0%;
+    padding: 5px 10px;
+  }
+
+  .app-nav .hide-links,
+  .details-nav .hide-links {
+    gap: 15px;
+    top: 1.6%;
+    left: -30%;
+  }
 }
 @media (max-width: 500px) {
   .res-home-main {

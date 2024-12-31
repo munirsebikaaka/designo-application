@@ -67,16 +67,16 @@ const HeadphonesDetailsTwo = () => {
             <h1>IN THE BOX</h1>
             <ul>
               <li>
-                <span>1x</span> <p>Headphones Unit</p>
+                <span>1x</span>Headphones Unit
               </li>
               <li>
-                <span>2x</span> <p> Replacement Earcups</p>
+                <span>2x</span>Replacement Earcups
               </li>
               <li>
-                <span>1x</span> <p>User Manual</p>
+                <span>1x</span>User Manual
               </li>
               <li>
-                <span>1x</span> <p>33.5mm 5mAudioCable</p>
+                <span>1x</span>33.5mm 5mAudioCable
               </li>
             </ul>
           </div>

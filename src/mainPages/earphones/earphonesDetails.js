@@ -20,7 +20,8 @@ const EarphonesDetails = () => {
           </div>
           <div className="detail-container">
             <h1>
-              YX1 WIRELESS <br /> <span>EARPHONES</span>
+              YX1 WIRELESS
+              <br /> <span>EARPHONES</span>
             </h1>
             <p>
               Tailor your listening experience with bespoke dynamic drivers from
@@ -65,19 +66,19 @@ const EarphonesDetails = () => {
             <h1>IN THE BOX</h1>
             <ul>
               <li>
-                <span>1x</span> <p> Earphone Unit</p>
+                <span>1x</span> Earphone Unit
               </li>
               <li>
-                <span>2x</span> <p> Multi-Size Ear Plug</p>
+                <span>2x</span> <> Multi-Size Ear Plug</>
               </li>
               <li>
-                <span>1x</span> <p> User Manual</p>
+                <span>1x</span> <> User Manual</>
               </li>
               <li>
-                <span>1x</span> <p> USB-C Charging Plug</p>
+                <span>1x</span> <> USB-C Charging Plug</>
               </li>
               <li>
-                <span>1x</span> <p> Travel Pouch</p>
+                <span>1x</span> <> Travel Pouch</>
               </li>
             </ul>
           </div>

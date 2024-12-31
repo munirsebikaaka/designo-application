@@ -70,19 +70,19 @@ const SpeakerDetails1 = () => {
             <h1>IN THE BOX</h1>
             <ul>
               <li>
-                <span>1x</span> <p> Speaker Unit</p>
+                <span>1x</span> <> Speaker Unit</>
               </li>
               <li>
-                <span>2x</span> <p> Speaker Cloth Panel</p>
+                <span>2x</span> <> Speaker Cloth Panel</>
               </li>
               <li>
-                <span>1x</span> <p> User Manual</p>
+                <span>1x</span> <> User Manual</>
               </li>
               <li>
-                <span>1x</span> <p> 33.5mm 10mAudioCable</p>
+                <span>1x</span> <> 33.5mm 10mAudioCable</>
               </li>
               <li>
-                <span>1x</span> <p> 10m Optical Cable</p>
+                <span>1x</span> <> 10m Optical Cable</>
               </li>
             </ul>
           </div>

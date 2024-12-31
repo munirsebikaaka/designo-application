@@ -1,7 +1,54 @@
+@media (max-width: 950px) {
+  .headphones .head h1 {
+    color: red;
+  }
+
+  .headphones .unreverse,
+  .speakers section,
+  .earphones .unreverse {
+    gap: 50px;
+  }
+
+  .headphones section img,
+  .speakers section img,
+  .earphones section img {
+    /* gap: 50px; */
+    width: 300px;
+  }
+}
+
 @media (max-width: 800px) {
   .container {
     padding: 0 30px;
   }
+
+  /* .pro-details .sections4 {
+    border: 1px solid red;
+  }
+
+  .pro-details .sections4 .small-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+    border: 1px solid red;
+  }
+  .pro-details .sections4 .small-imgs img {
+    width: 100%;
+    border-radius: 4px;
+    height: 245px;
+  }
+  .pro-details .sections4 .main-img {
+    height: 500px;
+    width: 200px;
+    border: 1px solid green;
+
+    height: 480px;
+
+    border-radius: 4px;
+  } */
+
   .main-img {
     display: none;
   }

@@ -15,11 +15,7 @@ const Headphones = () => {
       <section className="container">
         <div className="unreverse">
           <div className="img-container">
-            <img
-              className="img"
-              src="imgs/headphones/head2.png"
-              alt="headphone barts"
-            />
+            <img src="imgs/headphones/head2.png" alt="headphone barts" />
           </div>
           <div className="about">
             <h4>NEW PRODUCTS</h4>
@@ -55,22 +51,14 @@ const Headphones = () => {
           </NavLink>
         </div>
         <div className="img-container">
-          <img
-            className="img"
-            src="imgs/headphones/head1.png"
-            alt="headphone barts"
-          />
+          <img src="imgs/headphones/head1.png" alt="headphone barts" />
         </div>
       </section>
 
       <section className="container">
         <div className="unreverse">
           <div className="img-container">
-            <img
-              className="img"
-              src="imgs/headphones/head3.png"
-              alt="headphone barts"
-            />
+            <img src="imgs/headphones/head3.png" alt="headphone barts" />
           </div>
           <div className="about">
             <h1>

@@ -62,40 +62,43 @@ const HeadphonesDetailsOnes = () => {
               a modern design aesthetic.
             </p>
           </div>
-          <div className="bonus">
-            <h1>IN THE BOX</h1>
-            <ul>
-              <li>
-                <span>1x</span>Headphones Unit
-              </li>
-              <li>
-                <span>2x</span>Replacement Earcups
-              </li>
-              <li>
-                <span>1x</span>User Manual
-              </li>
-              <li>
-                <span>1x</span>33.5mm 5mAudioCable
-              </li>
-              <li>
-                <span>1x</span>Travel Bag
-              </li>
-            </ul>
+          <div className="bonus-cell">
+            <div className="bonus">
+              <h1>IN THE BOX</h1>
+              <ul>
+                <li>
+                  <span>1x</span> <p>Headphones Unit</p>
+                </li>
+                <li>
+                  <span>2x</span> <p>Replacement Earcups</p>
+                </li>
+                <li>
+                  <span>1x</span>
+                  <p>User Manual</p>
+                </li>
+                <li>
+                  <span>1x</span> <p>33.5mm 5mAudioCable</p>
+                </li>
+                <li>
+                  <span>1x</span>
+                  <p>Travel Bag</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="container">
-        <div className="sections4">
-          <div className="small-imgs">
-            <img src="imgs/headphones/Bitmap (2).jpg" alt="headphone" />
-            <img src="imgs/headphones/Bitmap (1).jpg" alt="headphone" />
+        <div className="section-img">
+          <div className="small-ones">
+            <img src=" imgs/headphones/Bitmap (2).jpg " alt="client-face" />
+            <img
+              src=" imgs/headphones/Bitmap (1).jpg "
+              alt="phone conected with blutooth"
+            />
           </div>
-          <img
-            className="main-img"
-            src="imgs/headphones/Bitmap.jpg"
-            alt="headphone"
-          />
+          <img src=" imgs/headphones/Bitmap.jpg " alt="earpads" />
         </div>
       </section>
 

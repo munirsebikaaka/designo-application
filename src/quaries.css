@@ -33,13 +33,13 @@
   .headphones .unreverse,
   .speakers section,
   .earphones .unreverse {
-    gap: 50px;
+    gap: 30px;
   }
 
   .headphones section img,
   .speakers section img,
   .earphones section img {
-    width: 300px;
+    width: 250px;
   }
 
   .location-cell img {
@@ -47,11 +47,19 @@
     height: 430px;
     border-radius: 5px;
   }
+
+  .pro-details .sections1 {
+    gap: 50px;
+  }
+
+  .pro-details .sections1 p {
+    width: 100%;
+  }
 }
 
 @media (max-width: 800px) {
   .container {
-    padding: 0 30px;
+    padding: 0 20px;
   }
 
   /* .pro-details .sections4 {
@@ -142,11 +150,17 @@
     width: 100%;
     height: auto;
   }
+
+  .footer-body {
+    padding: 30px 20px;
+  }
   .footer-navigation {
     display: flex;
     flex-direction: column;
     align-items: start;
     padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .footer-navigation ul {
     padding-top: 30px;
@@ -176,6 +190,11 @@
   }
   body {
     position: relative;
+  }
+
+  .app-nav,
+  .details-nav {
+    padding: 30px 20px;
   }
 
   .app-nav .show-links,
@@ -209,8 +228,8 @@
   }
 
   .headphones .unreverse,
-  .speakers section,
-  .earphones section {
+  .speakers .unreverse,
+  .earphones .unreverse {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -249,23 +268,32 @@
   }
 
   .pro-details .sections1 {
-    /* display: grid; */
     grid-template-columns: 1fr 2fr;
-    /* align-items: center; */
-    gap: 70px;
+    gap: 60px;
   }
   .pro-details .sections1 img {
     width: 200px;
   }
 
   .pro-details .sections2 {
+    display: flex;
     flex-direction: column;
     gap: 120px;
+  }
+
+  .bonus-cell {
+    display: flex;
+    justify-content: space-between;
   }
   .pro-details .sections2 p {
     width: 100%;
   }
+
+  .img {
+    padding: 60px 10px;
+  }
   .bonus {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1.1fr;
     justify-content: space-between;
@@ -273,6 +301,10 @@
 
   .mobile-menu {
     display: none;
+  }
+
+  .goback {
+    padding: 0 20px;
   }
 }
 @media (max-width: 700px) {
@@ -298,6 +330,20 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 8.12px;
+  }
+
+  .pro-details .sections5 .main h1 {
+    font-size: 22px;
+  }
+
+  .pro-details .section-img img {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+  }
+
+  .pro-details .section-img .small-ones img {
+    height: 217.5px;
   }
 }
 
@@ -426,6 +472,10 @@
     gap: 70px;
   }
 
+  .pro-details .sections5 {
+    margin: 250px 0;
+  }
+
   .pro-details .sections5 .main .sec-details {
     gap: 20px;
   }
@@ -450,6 +500,10 @@
     left: -30%;
   }
 
+  .location-cell {
+    margin: 200px auto;
+  }
+
   .location-cell h1 {
     font-size: 36px;
     line-height: 40px;
@@ -457,6 +511,16 @@
 
   .location-cell span {
     font-size: 36px;
+  }
+
+  .pro-details .sections5 .main .sec-details img {
+    height: 180px;
+  }
+
+  .pro-details .section-img {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 }
 @media (max-width: 500px) {
@@ -510,5 +574,13 @@
     text-align: center;
     width: 90%;
     padding: 0 5px;
+  }
+  .pro-details .sections5 .head {
+    font-size: 24px;
+  }
+  .pro-details .section-img img {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
   }
 }

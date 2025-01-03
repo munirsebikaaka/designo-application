@@ -1,7 +1,7 @@
 import AppNav from "./navigations/appNavigation";
 const ResHome = () => {
   const styles = {
-    backgroundImage: `url('imgs/home/Bitmap.png')`,
+    backgroundImage: `url('imgs/home/Bitmapy.png')`,
   };
   return (
     <section className="res-home">

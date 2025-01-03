@@ -67,38 +67,36 @@ const HeadphonesDetailsTwo = () => {
             <h1>IN THE BOX</h1>
             <ul>
               <li>
-                <span>1x</span>Headphones Unit
+                <span>1x</span>
+                <p>Headphones Unit</p>
               </li>
               <li>
-                <span>2x</span>Replacement Earcups
+                <span>2x</span>
+                <p>Replacement Earcups</p>
               </li>
               <li>
-                <span>1x</span>User Manual
+                <span>1x</span>
+                <p>User Manual</p>
               </li>
               <li>
-                <span>1x</span>33.5mm 5mAudioCable
+                <span>1x</span>
+                <p>33.5mm 5mAudioCable</p>
               </li>
             </ul>
           </div>
         </div>
       </section>
+
       <section className="container">
-        <div className="sections4">
-          <div className="small-imgs">
-            <img src="imgs/headphones/Bitmap8 (1).png" alt="headphone" />
-            <img
-              className="main-img"
-              src="imgs/headphones/Bitmap8 (3).png"
-              alt="headphone"
-            />
+        <div className="section-img">
+          <div className="small-ones">
+            <img src=" imgs/headphones/Bitmap8 (3).png " alt="earpads" />
+            <img src=" imgs/headphones/Bitmap8 (1).png" alt="earpads" />
           </div>
-          <img
-            className="main-img"
-            src="imgs/headphones/Bitmap8 (2).png"
-            alt="headphone"
-          />
+          <img src=" imgs/headphones/Bitmap8 (2).png " alt="earpads" />
         </div>
       </section>
+
       <section className="container">
         <div className="sections5">
           <h1 className="head">YOU MAY ALSO LIKE</h1>

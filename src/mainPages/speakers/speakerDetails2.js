@@ -69,35 +69,36 @@ const SpeakerDetails2 = () => {
 
             <ul>
               <li>
-                <span>1x</span>Speaker Unit
+                <span>1x</span>
+                <p>Speaker Unit</p>
               </li>
               <li>
-                <span>2x</span>Speaker Cloth Panel
+                <span>2x</span>
+                <p>Speaker Cloth Panel</p>
               </li>
               <li>
-                <span>1x</span>User Manual
+                <span>1x</span>
+                <p>User Manual</p>
               </li>
               <li>
-                <span>1x</span>3.5mm 7.5m Audio Cable
+                <span>1x</span>
+                <p>3.5mm 7.5m Audio Cable</p>
               </li>
               <li>
-                <span>1x</span>7.5m Optical Cable
+                <span>1x</span>
+                <p>7.5m Optical Cable</p>
               </li>
             </ul>
           </div>
         </div>
       </section>
       <section className="container">
-        <div className="sections4">
-          <div className="small-imgs">
-            <img src="imgs/speakers/Bitmap.png" alt="speaker" />
-            <img src="imgs/speakers/Bitmap (1).png" alt="speaker" />
+        <div className="section-img">
+          <div className="small-ones">
+            <img src=" imgs/speakers/Bitmap (6).png " alt="earpads" />
+            <img src=" imgs/speakers/Bitmap (1).png" alt="earpads" />
           </div>
-          <img
-            className="main-img"
-            src="imgs/speakers/Bitmap (3).png"
-            alt="speaker"
-          />
+          <img src=" imgs/speakers/Bitmap (3).png " alt="earpads" />
         </div>
       </section>
       <section className="container">

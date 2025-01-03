@@ -69,16 +69,19 @@ const HeadphonesDetailsThree = () => {
             <h1>IN THE BOX</h1>
             <ul>
               <li>
-                <span>1x</span>   Headphones Unit
+                <span>1x</span> <p>Headphones Unit</p>
               </li>
               <li>
-                <span>2x</span>Replacement Earcups
+                <span>2x</span>
+                <p>Replacement Earcups</p>
               </li>
               <li>
-                <span>1x</span>User Manual
+                <span>1x</span>
+                <p>User Manual</p>
               </li>
               <li>
-                <span>1x</span>33.5mm 5mAudioCable
+                <span>1x</span>
+                <p>33.5mm 5mAudioCable</p>
               </li>
             </ul>
           </div>
@@ -86,16 +89,12 @@ const HeadphonesDetailsThree = () => {
       </section>
 
       <section className="container">
-        <div className="sections4">
-          <div className="small-imgs">
-            <img src="imgs/headphones/Bitmap (5).png" alt="white ear pads" />
-            <img src="imgs/headphones/Bitmap (4).png" alt="white ear pads" />
+        <div className="section-img">
+          <div className="small-ones">
+            <img src=" imgs/headphones/Bitmap (5).png " alt="earpads" />
+            <img src=" imgs/headphones/Bitmap (4).png" alt="earpads" />
           </div>
-          <img
-            className="main-img"
-            src="imgs/headphones/Bitmap (3).png"
-            alt="white ear pads"
-          />
+          <img src=" imgs/headphones/Bitmap (3).png " alt="earpads" />
         </div>
       </section>
 

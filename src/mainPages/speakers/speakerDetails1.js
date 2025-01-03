@@ -70,36 +70,34 @@ const SpeakerDetails1 = () => {
             <h1>IN THE BOX</h1>
             <ul>
               <li>
-                <span>1x</span> <> Speaker Unit</>
+                <span>1x</span>
+                <p>Speaker Unit</p>
               </li>
               <li>
-                <span>2x</span> <> Speaker Cloth Panel</>
+                <span>2x</span> <p>Speaker Cloth Panel</p>
               </li>
               <li>
-                <span>1x</span> <> User Manual</>
+                <span>1x</span>
+                <p>User Manual</p>
               </li>
               <li>
-                <span>1x</span> <> 33.5mm 10mAudioCable</>
+                <span>1x</span>
+                <p>33.5mm 10mAudioCable</p>
               </li>
               <li>
-                <span>1x</span> <> 10m Optical Cable</>
+                <span>1x</span> <p>10m Optical Cable</p>
               </li>
             </ul>
           </div>
         </div>
       </section>
       <section className="container">
-        <div className="sections4">
-          <div className="small-imgs">
-            <img src="imgs/speakers/Bitmap (6).png" alt="face of speaker" />
-            <img src="imgs/speakers/Bitmap (7).png" alt="face of speaker" />
+        <div className="section-img">
+          <div className="small-ones">
+            <img src=" imgs/speakers/Bitmap.png " alt="earpads" />
+            <img src=" imgs/speakers/Bitmap (7).png" alt="earpads" />
           </div>
-
-          <img
-            className="main-img"
-            src="imgs/speakers/Bitmap (8).png"
-            alt="face of speaker"
-          />
+          <img src=" imgs/speakers/Bitmap (8).png " alt="earpads" />
         </div>
       </section>
 

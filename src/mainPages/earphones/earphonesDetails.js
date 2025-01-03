@@ -66,35 +66,34 @@ const EarphonesDetails = () => {
             <h1>IN THE BOX</h1>
             <ul>
               <li>
-                <span>1x</span> Earphone Unit
+                <span>1x</span>
+                <p>Earphone Unit</p>
               </li>
               <li>
-                <span>2x</span> <> Multi-Size Ear Plug</>
+                <span>2x</span>
+                <p>Multi-Size Ear Plug</p>
               </li>
               <li>
-                <span>1x</span> <> User Manual</>
+                <span>1x</span> <p>User Manual</p>
               </li>
               <li>
-                <span>1x</span> <> USB-C Charging Plug</>
+                <span>1x</span>
+                <p>USB-C Charging Plug</p>
               </li>
               <li>
-                <span>1x</span> <> Travel Pouch</>
+                <span>1x</span> <p>Travel Pouch</p>
               </li>
             </ul>
           </div>
         </div>
       </section>
       <section className="container">
-        <div className="sections4">
-          <div className="small-imgs">
-            <img src="imgs/earphones/Bitmap (5).png" alt="earphones" />
-            <img src="imgs/earphones/Bitmap (4).png" alt="earphones" />
+        <div className="section-img">
+          <div className="small-ones">
+            <img src=" imgs/earphones/Bitmap (5).png " alt="earpads" />
+            <img src=" imgs/earphones/Bitmap (4).png" alt="earpads" />
           </div>
-          <img
-            className="main-img"
-            src="imgs/earphones/Bitmap (6).png"
-            alt="earphones"
-          />
+          <img src=" imgs/earphones/Bitmap (6).png " alt="earpads" />
         </div>
       </section>
       <section className="container">

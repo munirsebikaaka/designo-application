@@ -4,7 +4,7 @@ import LocationDetails from "../../generals/locationDet";
 import Samples from "../../generals/samples";
 import DetailsNav from "../../navigations/detailsNav";
 
-const HeadphonesDetailsThree = () => {
+const HeadphonesDetailsThree = ({ setShowCart }) => {
   return (
     <div className="pro-details">
       <DetailsNav />
@@ -39,7 +39,9 @@ const HeadphonesDetailsThree = () => {
                 <span className="smy">-</span>
                 <span className="num">1</span> <span className="smy">+</span>
               </button>
-              <button className="increase2">ADD TO CART</button>
+              <button onClick={() => setShowCart(true)} className="increase2">
+                ADD TO CART
+              </button>
             </div>
           </div>
         </div>

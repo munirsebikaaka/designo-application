@@ -3,7 +3,7 @@ import Footer from "../generals/Footer";
 import LocationDetails from "../generals/locationDet";
 import ResHome from "../resHome";
 import Samples from "../generals/samples";
-import Login from "./buyingComps/Login";
+// import Thanks from "./buyingComps/thanks";
 
 function Home() {
   const styles = {
@@ -11,7 +11,7 @@ function Home() {
   };
   return (
     <div>
-      <Login />
+      {/* <Thanks /> */}
       <section className="section1">
         <AppNav />
         <div className="main">

@@ -1,13 +1,14 @@
 import { RiSecurePaymentFill } from "react-icons/ri";
 import Footer from "../../generals/Footer";
-import AppNav from "../../navigations/appNavigation";
+import DetailsNav from "../../navigations/detailsNav";
 
 const Login = () => {
   return (
     <div className="login">
-      <AppNav />
-
-      <button>Go Back</button>
+      <DetailsNav />
+      <div className="goback">
+        <button className="link">Go Back</button>
+      </div>
       <section className="container">
         <div className="login-cell">
           <div className="main-login-cell">
@@ -153,14 +154,11 @@ const Login = () => {
               <h1>VAT(INCLUDDED)</h1>
               <p>$1,079</p>
             </div>
-            <div
-              className="cart2 last-cart
-          "
-            >
+            <div className="cart2 last-cart">
               <h1>GRAND TOTAL</h1>
               <p className="grand">$5,446</p>
             </div>
-            <button className="see-products">CHECKOUT</button>
+            <button className="see-products">CONTINUE</button>
           </div>
         </div>
       </section>

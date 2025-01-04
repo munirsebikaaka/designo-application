@@ -1,7 +1,4 @@
-const Layout = () => {
-  return (
-    <div className="overlay">
-      <h1>CODESMANN LAYOUT</h1>
-    </div>
-  );
+const Layout = ({ setShowCart }) => {
+  return <div onClick={() => setShowCart(false)} className="overlay"></div>;
 };
+export default Layout;

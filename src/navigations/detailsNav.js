@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
 import { useState } from "react";
 
-const DetailsNav = () => {
+const DetailsNav = ({setShowLogin}) => {
   const [showHideLinks, setShowHideLinks] = useState(false);
   function add() {
     setShowHideLinks(true);
@@ -14,7 +14,7 @@ const DetailsNav = () => {
   }
   return (
     <div className="details-navigation">
-      <nav className="details-nav">
+      <nav onClick={} className="details-nav">
         <IoMdMenu onClick={add} className="mobile-menu" />
 
         <div className="menu">

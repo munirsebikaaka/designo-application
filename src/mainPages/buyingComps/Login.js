@@ -2,12 +2,14 @@ import { RiSecurePaymentFill } from "react-icons/ri";
 import Footer from "../../generals/Footer";
 import DetailsNav from "../../navigations/detailsNav";
 
-const Login = () => {
+const Login = ({ setShowLogin }) => {
   return (
     <div className="login">
-      <DetailsNav />
+      <DetailsNav setShowLogin={setShowLogin} />
       <div className="goback">
-        <button className="link">Go Back</button>
+        <button onClick={() => setShowLogin(false)} className="link">
+          Go Back
+        </button>
       </div>
       <section className="container">
         <div className="login-cell">

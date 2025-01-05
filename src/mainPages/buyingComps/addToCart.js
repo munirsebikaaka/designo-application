@@ -1,4 +1,8 @@
-const AddCart = () => {
+const AddCart = ({ setShowLogin, setShowCart }) => {
+  const setDefaultComands = () => {
+    setShowCart(false);
+    setShowLogin(true);
+  };
   return (
     <div className="add-to-cart">
       <div className="cart">
@@ -50,7 +54,9 @@ const AddCart = () => {
         <h1>TOTAL</h1>
         <p>$5,395</p>
       </div>
-      <button className="see-products">CHECKOUT</button>
+      <button onClick={setDefaultComands} className="see-products">
+        CHECKOUT
+      </button>
     </div>
   );
 };

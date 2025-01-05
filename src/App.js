@@ -17,10 +17,19 @@ import { useState } from "react";
 function App() {
   const [showCart, setShowCart] = useState(false);
   const [showThanks, setShowThanks] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
   return (
     <div>
-      {showCart || showThanks ? <Layout setShowCart={setShowCart} /> : ""}
-      {showCart ? <AddCart /> : ""}
+      {showCart || showThanks ? (
+        <Layout setShowCart={setShowCart} setShowLogin={setShowLogin} />
+      ) : (
+        ""
+      )}
+      {showCart ? (
+        <AddCart setShowLogin={setShowLogin} setShowCart={setShowCart} />
+      ) : (
+        ""
+      )}
       {showThanks ? <Thanks /> : ""}
       <BrowserRouter>
         <Routes>
@@ -28,15 +37,33 @@ function App() {
           <Route path="headphones" element={<Headphones />} />
           <Route
             path="detailsOne"
-            element={<HeadphonesDetailsOnes setShowCart={setShowCart} />}
+            element={
+              <HeadphonesDetailsOnes
+                setShowCart={setShowCart}
+                showLogin={showLogin}
+                setShowLogin={setShowLogin}
+              />
+            }
           />
           <Route
             path="detailsTwo"
-            element={<HeadphonesDetailsTwo setShowCart={setShowCart} />}
+            element={
+              <HeadphonesDetailsTwo
+                setShowCart={setShowCart}
+                showLogin={showLogin}
+                setShowLogin={setShowLogin}
+              />
+            }
           />
           <Route
             path="detailsThree"
-            element={<HeadphonesDetailsThree setShowCart={setShowCart} />}
+            element={
+              <HeadphonesDetailsThree
+                setShowCart={setShowCart}
+                showLogin={showLogin}
+                setShowLogin={setShowLogin}
+              />
+            }
           />
           <Route path="speakers" element={<Speakers />} />
           <Route
@@ -45,6 +72,8 @@ function App() {
               <SpeakerDetails1
                 setShowCart={setShowCart}
                 setShowThanks={setShowThanks}
+                showLogin={showLogin}
+                setShowLogin={setShowLogin}
               />
             }
           />
@@ -54,6 +83,8 @@ function App() {
               <SpeakerDetails2
                 setShowCart={setShowCart}
                 setShowThanks={setShowThanks}
+                showLogin={showLogin}
+                setShowLogin={setShowLogin}
               />
             }
           />
@@ -64,6 +95,8 @@ function App() {
               <EarphonesDetails
                 setShowCart={setShowCart}
                 setShowThanks={setShowThanks}
+                showLogin={showLogin}
+                setShowLogin={setShowLogin}
               />
             }
           />

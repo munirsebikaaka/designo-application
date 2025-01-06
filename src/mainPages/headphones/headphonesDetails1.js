@@ -5,12 +5,19 @@ import Samples from "../../generals/samples";
 import DetailsNav from "../../navigations/detailsNav";
 import Login from "../buyingComps/Login";
 
-const HeadphonesDetailsOnes = ({ setShowCart, showLogin, setShowLogin }) => {
+const HeadphonesDetailsOnes = ({
+  setShowCart,
+  showCart,
+  showLogin,
+  setShowLogin,
+  setShowThanks,
+  showThanks,
+}) => {
   return (
     <>
       {!showLogin ? (
         <div className="pro-details">
-          <DetailsNav />
+          <DetailsNav setShowLogin={setShowLogin} />
           <div className="goback">
             <NavLink className={"link"} to={"/headphones"}>
               Go Back
@@ -27,7 +34,7 @@ const HeadphonesDetailsOnes = ({ setShowCart, showLogin, setShowLogin }) => {
               </div>
               <div className="detail-container">
                 <h1>XX99 MARK II HEADPHONES</h1>
-                <p>
+                <p className={!showCart ? "reduce-opp" : "add-opp"}>
                   The new XX99 Mark II headphones is the pinnacle of pristine
                   audio. It redefines your premium headphone experience by
                   reproducing the balanced depth and precision of studio-quality
@@ -145,7 +152,11 @@ const HeadphonesDetailsOnes = ({ setShowCart, showLogin, setShowLogin }) => {
           <Footer />
         </div>
       ) : (
-        <Login setShowLogin={setShowLogin} />
+        <Login
+          setShowLogin={setShowLogin}
+          setShowThanks={setShowThanks}
+          showThanks={showThanks}
+        />
       )}
     </>
   );

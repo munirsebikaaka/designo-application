@@ -5,12 +5,19 @@ import DetailsNav from "../../navigations/detailsNav";
 import { NavLink } from "react-router-dom";
 import Login from "../buyingComps/Login";
 
-const HeadphonesDetailsTwo = ({ setShowCart, showLogin, setShowLogin }) => {
+const HeadphonesDetailsTwo = ({
+  setShowCart,
+  showCart,
+  showLogin,
+  setShowLogin,
+  setShowThanks,
+  showThanks,
+}) => {
   return (
     <>
       {!showLogin ? (
         <div className="pro-details">
-          <DetailsNav />
+          <DetailsNav setShowLogin={setShowLogin} />
           <div className="goback">
             <NavLink className={"link"} to={"/headphones"}>
               Go Back
@@ -27,7 +34,7 @@ const HeadphonesDetailsTwo = ({ setShowCart, showLogin, setShowLogin }) => {
               </div>
               <div className="detail-container">
                 <h1>XX99 MARK I HEADPHONES</h1>
-                <p>
+                <p className={!showCart ? "reduce-opp" : "add-opp"}>
                   As the gold standard for headphones, the classic XX99 Mark I
                   offers detailed and accurate audio reproduction for
                   audiophiles, mixing engineers, and music aficionados alike in
@@ -142,7 +149,11 @@ const HeadphonesDetailsTwo = ({ setShowCart, showLogin, setShowLogin }) => {
           <Footer />
         </div>
       ) : (
-        <Login setShowLogin={setShowLogin} />
+        <Login
+          setShowLogin={setShowLogin}
+          setShowThanks={setShowThanks}
+          showThanks={showThanks}
+        />
       )}
     </>
   );

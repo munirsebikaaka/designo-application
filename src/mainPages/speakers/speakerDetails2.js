@@ -5,12 +5,19 @@ import Samples from "../../generals/samples";
 import DetailsNav from "../../navigations/detailsNav";
 import Login from "../buyingComps/Login";
 
-const SpeakerDetails2 = ({ setShowCart, showLogin, setShowLogin }) => {
+const SpeakerDetails2 = ({
+  setShowCart,
+  showCart,
+  showLogin,
+  setShowLogin,
+  setShowThanks,
+  showThanks,
+}) => {
   return (
     <>
       {!showLogin ? (
         <div className="pro-details">
-          <DetailsNav />
+          <DetailsNav setShowLogin={setShowLogin} />
           <div className="goback">
             <NavLink className={"link"} to={"/speakers"}>
               Go Back
@@ -30,7 +37,7 @@ const SpeakerDetails2 = ({ setShowCart, showLogin, setShowLogin }) => {
                   ZX7
                   <br /> SPEAKER
                 </h1>
-                <p>
+                <p className={!showCart ? "reduce-opp" : "add-opp"}>
                   Stream high quality sound wirelessly with minimal to no loss.
                   The ZX7 speaker uses high-end audiophile components that
                   represents the top of the line powered speakers for home or
@@ -147,7 +154,11 @@ const SpeakerDetails2 = ({ setShowCart, showLogin, setShowLogin }) => {
           <Footer />
         </div>
       ) : (
-        <Login setShowLogin={setShowLogin} />
+        <Login
+          setShowLogin={setShowLogin}
+          setShowThanks={setShowThanks}
+          showThanks={showThanks}
+        />
       )}
     </>
   );

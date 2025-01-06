@@ -5,12 +5,19 @@ import Samples from "../../generals/samples";
 import DetailsNav from "../../navigations/detailsNav";
 import Login from "../buyingComps/Login";
 
-const HeadphonesDetailsThree = ({ setShowCart, showLogin, setShowLogin }) => {
+const HeadphonesDetailsThree = ({
+  setShowCart,
+  showCart,
+  showLogin,
+  setShowLogin,
+  setShowThanks,
+  showThanks,
+}) => {
   return (
     <>
       {!showLogin ? (
         <div className="pro-details">
-          <DetailsNav />
+          <DetailsNav setShowLogin={setShowLogin} />
           <div className="goback">
             <NavLink className={"link"} to={"/headphones"}>
               Go Back
@@ -31,7 +38,7 @@ const HeadphonesDetailsThree = ({ setShowCart, showLogin, setShowLogin }) => {
                   <br />
                   <span> HEADPHONES</span>
                 </h1>
-                <p>
+                <p className={!showCart ? "reduce-opp" : "add-opp"}>
                   Enjoy your audio almost anywhere and customize it to your
                   specific tastes with the XX59 headphones. The stylish yet
                   durable versatile wireless headset is a brilliant companion at
@@ -144,7 +151,11 @@ const HeadphonesDetailsThree = ({ setShowCart, showLogin, setShowLogin }) => {
           <Footer />
         </div>
       ) : (
-        <Login setShowLogin={setShowLogin} />
+        <Login
+          setShowLogin={setShowLogin}
+          setShowThanks={setShowThanks}
+          showThanks={showThanks}
+        />
       )}
     </>
   );

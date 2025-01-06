@@ -2,7 +2,7 @@ import { RiSecurePaymentFill } from "react-icons/ri";
 import Footer from "../../generals/Footer";
 import DetailsNav from "../../navigations/detailsNav";
 
-const Login = ({ setShowLogin }) => {
+const Login = ({ setShowLogin, setShowThanks, showThanks }) => {
   return (
     <div className="login">
       <DetailsNav setShowLogin={setShowLogin} />
@@ -38,7 +38,7 @@ const Login = ({ setShowLogin }) => {
                     />
                   </div>
                 </div>
-                <label>Phonenumber</label>
+                <label>Phone number</label>
                 <br />
                 <input
                   className="login-phone"
@@ -98,13 +98,25 @@ const Login = ({ setShowLogin }) => {
                 </div>
               </div>
               <div className="payment">
-                <RiSecurePaymentFill className="icon" />
-                <p>
-                  The ‘Cash on Delivery’ option enables you to pay in cash when
-                  our delivery courier arrives at your residence. Just make sure
-                  your address is correct so that your order will not be
-                  cancelled.
-                </p>
+                <div>
+                  <label>e-Money Number</label>
+                  <br />
+                  <input
+                    className="login-input"
+                    type="text"
+                    placeholder="238521993"
+                  />
+                </div>
+                <div>
+                  <label>e-Money Pin</label>
+                  <br />
+
+                  <input
+                    className="login-input"
+                    type="text"
+                    placeholder="6891"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -118,7 +130,7 @@ const Login = ({ setShowLogin }) => {
                 <img src="imgs/Group 22.png" alt="pads" />
                 <div>
                   <h1 className="name">XX99 MK II</h1>
-                  <p className="price">$2,999</p>
+                  <p className={!showThanks ? "price" : "add-opp"}>$2,999</p>
                 </div>
               </div>
               <p className="btn">x1 </p>
@@ -128,7 +140,7 @@ const Login = ({ setShowLogin }) => {
                 <img src="imgs/Group 22 (2).png" alt="pads" />
                 <div>
                   <h1 className="name">XX59</h1>
-                  <p className="price">$899</p>
+                  <p className={!showThanks ? "price" : "add-opp"}>$899</p>
                 </div>
               </div>
               <p className="btn"> x2</p>
@@ -138,7 +150,7 @@ const Login = ({ setShowLogin }) => {
                 <img src="imgs/Group 22 (1).png" alt="pads" />
                 <div>
                   <h1 className="name">YX1</h1>
-                  <p className="price">$599</p>
+                  <p className={!showThanks ? "price" : "add-opp"}>$599</p>
                 </div>
               </div>
               <p className="btn">x1</p>
@@ -149,18 +161,29 @@ const Login = ({ setShowLogin }) => {
               <p>$5,395</p>
             </div>
             <div className="cart2">
-              <h1>SHIPING</h1>
+              <h1 className={!showThanks ? "reduce-opp" : "add-opp"}>
+                SHIPING
+              </h1>
               <p>$50</p>
             </div>
             <div className="cart2">
-              <h1>VAT(INCLUDDED)</h1>
+              <h1 className={!showThanks ? "reduce-opp" : "add-opp"}>
+                VAT(INCLUDDED)
+              </h1>
               <p>$1,079</p>
             </div>
             <div className="cart2 last-cart">
-              <h1>GRAND TOTAL</h1>
+              <h1 className={!showThanks ? "reduce-opp" : "add-opp"}>
+                GRAND TOTAL
+              </h1>
               <p className="grand">$5,446</p>
             </div>
-            <button className="see-products">CONTINUE</button>
+            <button
+              onClick={() => setShowThanks(true)}
+              className="see-products"
+            >
+              CONTINUE
+            </button>
           </div>
         </div>
       </section>

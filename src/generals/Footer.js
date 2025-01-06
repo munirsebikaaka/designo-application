@@ -7,6 +7,9 @@ const Footer = () => {
   return (
     <div className="footer-cell">
       <footer>
+        <div className="footer-top-border">
+          <p>{/* codesamann */}</p>
+        </div>
         <FooterNav />
         <div className="footer-body">
           <div className="inner">

@@ -5,12 +5,19 @@ import Samples from "../../generals/samples";
 import DetailsNav from "../../navigations/detailsNav";
 import Login from "../buyingComps/Login";
 
-const SpeakerDetails1 = ({ setShowCart, showLogin, setShowLogin }) => {
+const SpeakerDetails1 = ({
+  setShowCart,
+  showCart,
+  showLogin,
+  setShowLogin,
+  setShowThanks,
+  showThanks,
+}) => {
   return (
     <>
       {!showLogin ? (
         <div className="pro-details">
-          <DetailsNav />
+          <DetailsNav setShowLogin={setShowLogin} />
           <div className="goback">
             <NavLink className={"link"} to={"/speakers"}>
               Go Back
@@ -30,7 +37,7 @@ const SpeakerDetails1 = ({ setShowCart, showLogin, setShowLogin }) => {
                   ZX9 <br />
                   <span> SPEAKER</span>
                 </h1>
-                <p>
+                <p className={!showCart ? "reduce-opp" : "add-opp"}>
                   Upgrade your sound system with the all new ZX9 active speaker.
                   It’s a bookshelf speaker system that offers truly wireless
                   connectivity -- creating new possibilities for more pleasing
@@ -145,7 +152,11 @@ const SpeakerDetails1 = ({ setShowCart, showLogin, setShowLogin }) => {
           <Footer />
         </div>
       ) : (
-        <Login setShowLogin={setShowLogin} />
+        <Login
+          setShowLogin={setShowLogin}
+          setShowThanks={setShowThanks}
+          showThanks={showThanks}
+        />
       )}
     </>
   );

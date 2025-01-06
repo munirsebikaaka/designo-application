@@ -1,11 +1,13 @@
-const Layout = ({
-  setShowCart,
-  // setShowLogin
-}) => {
+const Layout = ({ setShowCart, setShowThanks, showCart, showThanks }) => {
   const setDefault = () => {
     setShowCart(false);
-    // setShowLogin(false);
+    setShowThanks(false);
   };
-  return <div onClick={setDefault} className="overlay"></div>;
+  return (
+    <div
+      onClick={setDefault}
+      className={showCart ? "overlay" : "overlay-thanks"}
+    ></div>
+  );
 };
 export default Layout;

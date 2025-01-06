@@ -21,7 +21,13 @@ function App() {
   return (
     <div>
       {showCart || showThanks ? (
-        <Layout setShowCart={setShowCart} setShowLogin={setShowLogin} />
+        <Layout
+          setShowCart={setShowCart}
+          setShowThanks={setShowThanks}
+          setShowLogin={setShowLogin}
+          showCart={showCart}
+          showThanks={showThanks}
+        />
       ) : (
         ""
       )}
@@ -40,8 +46,11 @@ function App() {
             element={
               <HeadphonesDetailsOnes
                 setShowCart={setShowCart}
+                showCart={showCart}
                 showLogin={showLogin}
                 setShowLogin={setShowLogin}
+                setShowThanks={setShowThanks}
+                showThanks={showThanks}
               />
             }
           />
@@ -50,8 +59,11 @@ function App() {
             element={
               <HeadphonesDetailsTwo
                 setShowCart={setShowCart}
+                showCart={showCart}
                 showLogin={showLogin}
                 setShowLogin={setShowLogin}
+                setShowThanks={setShowThanks}
+                showThanks={showThanks}
               />
             }
           />
@@ -60,8 +72,11 @@ function App() {
             element={
               <HeadphonesDetailsThree
                 setShowCart={setShowCart}
+                showCart={showCart}
                 showLogin={showLogin}
                 setShowLogin={setShowLogin}
+                setShowThanks={setShowThanks}
+                showThanks={showThanks}
               />
             }
           />
@@ -71,9 +86,11 @@ function App() {
             element={
               <SpeakerDetails1
                 setShowCart={setShowCart}
+                showCart={showCart}
                 setShowThanks={setShowThanks}
                 showLogin={showLogin}
                 setShowLogin={setShowLogin}
+                showThanks={showThanks}
               />
             }
           />
@@ -82,9 +99,11 @@ function App() {
             element={
               <SpeakerDetails2
                 setShowCart={setShowCart}
+                showCart={showCart}
                 setShowThanks={setShowThanks}
                 showLogin={showLogin}
                 setShowLogin={setShowLogin}
+                showThanks={showThanks}
               />
             }
           />
@@ -94,9 +113,11 @@ function App() {
             element={
               <EarphonesDetails
                 setShowCart={setShowCart}
+                showCart={showCart}
                 setShowThanks={setShowThanks}
                 showLogin={showLogin}
                 setShowLogin={setShowLogin}
+                showThanks={showThanks}
               />
             }
           />

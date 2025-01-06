@@ -1,10 +1,11 @@
 import { IoCheckmarkOutline } from "react-icons/io5";
+import Home from "../home";
 
 const Thanks = () => {
   return (
     <div className="thanks">
       <IoCheckmarkOutline className="mark" />
-      <h1>
+      <h1 className="head">
         THANK YOU <br /> FOR YOUR ORDER
       </h1>
       <p className="intro">You will recieve an email confamation shortly</p>
@@ -18,7 +19,7 @@ const Thanks = () => {
                 <p className="price">$2,999</p>
               </div>
             </div>
-            <p>x1</p>
+            <p className="x-one">x1</p>
           </div>
           <p className="left">and 2 other item(s)</p>
         </div>

@@ -5,12 +5,19 @@ import Samples from "../../generals/samples";
 import DetailsNav from "../../navigations/detailsNav";
 import Login from "../buyingComps/Login";
 
-const EarphonesDetails = ({ setShowCart, showLogin, setShowLogin }) => {
+const EarphonesDetails = ({
+  setShowCart,
+  showCart,
+  showLogin,
+  setShowLogin,
+  setShowThanks,
+  showThanks,
+}) => {
   return (
     <>
       {!showLogin ? (
         <div className="pro-details">
-          <DetailsNav />
+          <DetailsNav setShowLogin={setShowLogin} />
           <div className="goback">
             <NavLink className={"link"} to={"/earphones"}>
               Go Back
@@ -30,7 +37,7 @@ const EarphonesDetails = ({ setShowCart, showLogin, setShowLogin }) => {
                   YX1 WIRELESS
                   <br /> <span>EARPHONES</span>
                 </h1>
-                <p>
+                <p className={!showCart ? "reduce-opp" : "add-opp"}>
                   Tailor your listening experience with bespoke dynamic drivers
                   from the new YX1 Wireless Earphones. Enjoy incredible
                   high-fidelity sound even in noisy environments with its active
@@ -144,7 +151,11 @@ const EarphonesDetails = ({ setShowCart, showLogin, setShowLogin }) => {
           <Footer />
         </div>
       ) : (
-        <Login setShowLogin={setShowLogin} />
+        <Login
+          setShowLogin={setShowLogin}
+          setShowThanks={setShowThanks}
+          showThanks={showThanks}
+        />
       )}
     </>
   );

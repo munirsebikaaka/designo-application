@@ -6,6 +6,7 @@ const Samples = () => {
       <div className="samples">
         <div>
           <img src="imgs/samples/sample1.png" alt="product example" />
+          {/* <p className="shade"></p> */}
           <button>HEADPHONES</button>
           <p>
             SHOP <FaChevronRight className="sample-icon" />

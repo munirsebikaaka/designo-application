@@ -32,13 +32,11 @@ function Home() {
       <ResHome />
       <Samples />
       <section className="container">
-        {/* <div className="img-cont"></div> */}
-        {/* <div className="img-cont1"></div> */}
-        {/* <div className="img-cont2"></div> */}
-
+        <div className="img-cont"></div>
+        <div className="img-cont1"></div>
+        <div className="img-cont2"></div>
         <div className="section2">
           <img src="imgs/home/speaker.png" alt="speaker" />
-
           <div>
             <h1>
               ZX9 <br />

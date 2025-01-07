@@ -17,12 +17,12 @@
   box-sizing: border-box;
 }
 body {
-  /* background-color: #fdfdfd; */
   z-index: 10;
 }
 
 .container {
   padding: 0 30px;
+  overflow: hidden;
 }
 .res,
 .mobile-menu {
@@ -32,7 +32,7 @@ body {
 .res-home {
   background-color: var(--homebackground);
   padding: 0 30px;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
 }
 
 .res-home {
@@ -199,14 +199,14 @@ body {
   border: 1px solid var(--mainColor);
   position: absolute;
   width: 800px;
-  height: 750px;
+  height: 800px;
   border-radius: 50%;
-  left: 32.8%;
-  top: 32%;
+  left: 34.8%;
+  top: 35%;
   z-index: 2;
   transform: translate(-50%);
-} */
-/* .img-cont1,
+}
+.img-cont1,
 .img-cont2 {
   border: 1px solid var(--mainColor);
   position: absolute;
@@ -214,14 +214,14 @@ body {
   height: 500px;
   border-radius: 50%;
   left: 33.1%;
-  top: 37.3%;
+  top: 39.3%;
   z-index: 2;
   transform: translate(-50%);
 }
 .img-cont2 {
   width: 550px;
   height: 550px;
-  top: 36.7%;
+  top: 38.7%;
   left: 33%;
 }
 .section2 img {
@@ -517,7 +517,7 @@ footer {
 /* SAMPLES */
 .samples {
   max-width: 1100px;
-  margin: 200px auto;
+  margin: 100px auto;
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -626,7 +626,7 @@ footer {
 .img-container {
   width: 100%;
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .headphones h4,
@@ -1225,12 +1225,13 @@ body {
   gap: 30px;
   position: absolute;
   top: 2.6%;
-  right: 10%;
+  left: 60%;
   background-color: var(--mainColor);
   padding-top: 5px;
   padding-bottom: 20px;
   z-index: 10px;
   border-radius: 11px;
+  transform: translate(-50%);
 }
 
 .inner-cart {

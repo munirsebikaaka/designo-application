@@ -17,7 +17,11 @@ const HeadphonesDetailsTwo = ({
     <>
       {!showLogin ? (
         <div className="pro-details">
-          <DetailsNav setShowLogin={setShowLogin} />
+          <DetailsNav
+            setShowLogin={setShowLogin}
+            setShowThanks={setShowThanks}
+            setShowCart={setShowCart}
+          />
           <div className="goback">
             <NavLink className={"link"} to={"/headphones"}>
               Go Back
@@ -43,9 +47,9 @@ const HeadphonesDetailsTwo = ({
                 <h3 className="price"> $$ 1,750</h3>
                 <div className="inc-cell">
                   <button className="increase">
-                    <span className="smy">-</span>
+                    <span className={!showCart ? "smy" : "add-opp"}>-</span>
                     <span className="num">1</span>{" "}
-                    <span className="smy">+</span>
+                    <span className={!showCart ? "smy" : "add-opp"}>+</span>
                   </button>
                   <button
                     onClick={() => setShowCart(true)}

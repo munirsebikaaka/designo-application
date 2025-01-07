@@ -1,11 +1,10 @@
-import { RiSecurePaymentFill } from "react-icons/ri";
 import Footer from "../../generals/Footer";
 import DetailsNav from "../../navigations/detailsNav";
 
 const Login = ({ setShowLogin, setShowThanks, showThanks }) => {
   return (
     <div className="login">
-      <DetailsNav setShowLogin={setShowLogin} />
+      <DetailsNav setShowLogin={setShowLogin} setShowThanks={setShowThanks} />
       <div className="goback">
         <button onClick={() => setShowLogin(false)} className="link">
           Go Back

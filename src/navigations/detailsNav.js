@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { IoCartOutline } from "react-icons/io5";
 import { useState } from "react";
 
-const DetailsNav = ({ setShowLogin }) => {
+const DetailsNav = ({ setShowLogin, setShowThanks, setShowCart }) => {
   const [showHideLinks, setShowHideLinks] = useState(false);
   function add() {
     setShowHideLinks(true);
@@ -12,6 +12,11 @@ const DetailsNav = ({ setShowLogin }) => {
   function remove() {
     setShowHideLinks(false);
   }
+  const setDefaultFuns = () => {
+    setShowThanks(false);
+    setShowLogin(false);
+    setShowCart(false);
+  };
   return (
     <div className="details-navigation">
       <nav className="details-nav">
@@ -22,7 +27,7 @@ const DetailsNav = ({ setShowLogin }) => {
           <img src="imgs/home/audiophile.png" alt="Logo" />
         </div>
         <ul
-          onClick={() => setShowLogin(false)}
+          onClick={setDefaultFuns}
           className={showHideLinks ? "show-links" : "hide-links"}
         >
           <IoClose onClick={remove} className="close" />

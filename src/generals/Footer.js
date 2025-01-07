@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footer-cell">
       <footer>
         <div className="footer-top-border">
-          <p>{/* codesamann */}</p>
+          <p></p>
         </div>
         <FooterNav />
         <div className="footer-body">

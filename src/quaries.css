@@ -287,27 +287,25 @@
   .overlay {
     height: 150vh;
     position: absolute;
-    top: 3.9%;
+    top: 2%;
   }
   .overlay-thanks {
     top: 3.8%;
   }
-  .img-cont1,
+
+  /* .img-cont1,
   .img-cont2 {
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
-    left: 50.4%;
-    top: 35.3%;
+    left: 50%;
+    top: 33.5%;
     z-index: 2;
-    transform: translate(-50%);
   }
   .img-cont2 {
-    width: 240px;
-    height: 235px;
-    top: 35.2%;
-    left: 50.4%;
+    top: 33%;
+    left: 49.5%;
   }
+  .img-cont {
+    display: none;
+  } */
 }
 @media (max-width: 700px) {
   .res-home-main {
@@ -354,6 +352,20 @@
     gap: 18px;
     padding-top: 54px;
   }
+  /* .img-cont1,
+  .img-cont2 {
+    width: 360px;
+    height: 360px;
+    left: 50%;
+    top: 37.9%;
+  }
+  .img-cont2 {
+    width: 400px;
+    height: 400px;
+    top: 37.5%;
+    left: 49.5%;
+  } */
+
   .res-home-main {
     background-position: center;
     background-size: auto;
@@ -361,9 +373,9 @@
 
   .res-home-main h1 {
     font-family: Manrope;
-    font-size: 46px;
+    font-size: 40px;
     font-weight: 700;
-    line-height: 58px;
+    line-height: 48px;
     letter-spacing: 1.2857142686843872px;
   }
 
@@ -624,7 +636,7 @@
   .overlay {
     height: 170vh;
     position: absolute;
-    top: 3.1%;
+    top: 1.2%;
   }
   .overlay-thanks {
     top: 3.2%;
@@ -634,46 +646,17 @@
     /* padding: 50px 0; */
     padding-bottom: 50px;
   }
+  .res-home-main button {
+    font-size: 14px;
+    width: 168px;
+    height: 48px;
+  }
+  .add-to-cart {
+    width: 70%;
+    left: 50%;
+  }
 }
 @media (max-width: 500px) {
-  /* .res-home-main {
-    height: 360px;
-  }
-  .res-home-main div {
-    margin: 35px auto;
-  } */
-
-  .res-home-main div {
-    gap: 12px;
-    padding-top: 74px;
-  }
-
-  /* .res-home-main h1 {
-    font-size: 26px;
-    line-height: 30px;
-    letter-spacing: 1px;
-  } */
-
-  /* .res-home-main p {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 16px;
-    width: 70%;
-  } */
-
-  /* .res-home-main button {
-    font-size: 12px;
-    width: 125px;
-    height: 28px;
-  } */
-
-  /* .res-home-main h4 {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 5.12px;
-    letter-spacing: 6px;
-  } */
-
   .location-cell h1 {
     font-size: 26px;
     line-height: 34px;
@@ -717,5 +700,11 @@
   .thanks {
     width: 85%;
     height: auto;
+  }
+
+  .footer-body .inner p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
   }
 }

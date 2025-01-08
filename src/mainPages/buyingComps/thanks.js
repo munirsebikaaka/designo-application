@@ -1,5 +1,4 @@
 import { IoCheckmarkOutline } from "react-icons/io5";
-import Home from "../home";
 
 const Thanks = () => {
   return (

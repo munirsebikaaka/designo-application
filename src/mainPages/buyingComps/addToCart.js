@@ -7,7 +7,7 @@ const AddCart = ({ setShowLogin, setShowCart }) => {
     <div className="add-to-cart">
       <div className="cart">
         <h1>CART (3)</h1>
-        <a href="#">Remove all</a>
+        <button>Remove all</button>
       </div>
 
       <div className="cart1">

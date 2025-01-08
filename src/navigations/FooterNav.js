@@ -4,24 +4,16 @@ const FooterNav = () => {
       <img src="imgs/home/audiophile.png" alt="Logo" />
       <ul>
         <li>
-          <a href="#" className="nav-link">
-            HOME
-          </a>
+          <button className="nav-link">HOME</button>
         </li>
         <li>
-          <a href="#" className="nav-link">
-            HEADPHONES
-          </a>
+          <button className="nav-link">HEADPHONES</button>
         </li>
         <li>
-          <a href="#" className="nav-link">
-            SPEAKERS
-          </a>
+          <button className="nav-link">SPEAKERS</button>
         </li>
         <li>
-          <a href="#" className="nav-link">
-            EARPHONES
-          </a>
+          <button className="nav-link">EARPHONES</button>
         </li>
       </ul>
     </nav>

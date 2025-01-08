@@ -391,6 +391,7 @@
   letter-spacing: 2px;
   color: var(--mainColor);
   transition: all 0.5s;
+  background-color: inherit;
 }
 .footer-navigation .nav-link:hover {
   color: var(--semiMainColor);
